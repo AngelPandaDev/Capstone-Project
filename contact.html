@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - InstaGrab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">InstaGrab</a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have a question? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;">
+
+        <div>
+          <h2 style="margin-bottom:1.5rem;">Send us a Message</h2>
+
+          <form id="contactForm">
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option>General Inquiry</option>
+                <option>Customer Support</option>
+                <option>Restaurant Inquiry</option>
+                <option>Partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem;">
+              Send Message
+            </button>
+
+          </form>
+        </div>
+
+        <div>
+          <h2 style="margin-bottom:1.5rem;">Contact Information</h2>
+
+          <div style="background:#f5f5f5;padding:1.5rem;border-radius:1rem;margin-bottom:1.5rem;">
+            <h3 style="color:#ff6600;margin-bottom:1rem;">📍 Address</h3>
+            <p>
+              123 Food Street<br>
+              San Francisco, CA 94102<br>
+              United States
+            </p>
+          </div>
+
+          <div style="background:#f5f5f5;padding:1.5rem;border-radius:1rem;margin-bottom:1.5rem;">
+            <h3 style="color:#ff6600;margin-bottom:1rem;">📞 Phone</h3>
+            <p>
+              +1 (555) 123-4567<br>
+              Monday–Friday, 9am–6pm PST
+            </p>
+          </div>
+
+          <div style="background:#f5f5f5;padding:1.5rem;border-radius:1rem;margin-bottom:1.5rem;">
+            <h3 style="color:#ff6600;margin-bottom:1rem;">✉️ Email</h3>
+            <p>
+              support@instagrab.com<br>
+              business@instagrab.com
+            </p>
+          </div>
+
+          <div style="background:#f5f5f5;padding:1.5rem;border-radius:1rem;">
+            <h3 style="color:#ff6600;margin-bottom:1rem;">🕐 Business Hours</h3>
+            <p>
+              Monday–Friday: 9:00am – 6:00pm<br>
+              Saturday: 10:00am – 4:00pm<br>
+              Sunday: Closed
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-section">
+          <h3>InstaGrab</h3>
+          <p>Your favorite food delivery app. Order now, eat happy.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>For Customers</h3>
+          <ul class="footer-links">
+            <li><a href="#">Browse Restaurants</a></li>
+            <li><a href="#">Track Orders</a></li>
+            <li><a href="#">Special Offers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>For Restaurants</h3>
+          <ul class="footer-links">
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Business Resources</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 InstaGrab. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

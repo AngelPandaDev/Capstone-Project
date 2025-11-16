@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mama's Italian Kitchen - InstaGrab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">InstaGrab</a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="restaurant-detail">
+    <div class="container">
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-bottom:3rem;">
+        <div class="hero-image" style="width:100%; height:400px; object-fit:cover; border-radius:1rem;">Mama's Italian Kitchen</div>
+
+        <div style="display:flex; flex-direction:column; justify-content:center;">
+
+          <h1 style="margin-bottom:1rem;">Mama's Italian Kitchen</h1>
+          <p class="card-subtitle" style="margin-bottom:1.5rem;">Italian • Pasta • Pizza</p>
+
+          <div class="card-rating" style="margin-bottom:1.5rem;">
+            <span class="star">★★★★★</span>
+            <span>(324 reviews)</span>
+          </div>
+
+          <p style="margin-bottom:1.5rem;">
+            Family-owned Italian restaurant serving traditional dishes made
+            with fresh ingredients, handcrafted sauces, and classic flavors.
+          </p>
+
+          <div style="display:flex; gap:2rem; margin-bottom:1.5rem;">
+            <div style="text-align:center;">
+              <div style="font-size:1.5rem; font-weight:600; color:#ff6600;">30–45</div>
+              <div style="font-size:0.9rem; color:#666;">minutes</div>
+            </div>
+
+            <div style="text-align:center;">
+              <div style="font-size:1.5rem; font-weight:600; color:#ff6600;">Free</div>
+              <div style="font-size:0.9rem; color:#666;">over $25</div>
+            </div>
+
+            <div style="text-align:center;">
+              <div style="font-size:1.5rem; font-weight:600; color:#ff6600;">$2.99</div>
+              <div style="font-size:0.9rem; color:#666;">delivery fee</div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:1rem;">
+            <button class="btn btn-primary" style="flex:1;">Start Order</button>
+            <button class="btn btn-secondary" style="flex:1;">View Menu</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="margin-bottom:3rem;">
+        <h2 style="margin-bottom:2rem;">Menu</h2>
+
+        <!-- Appetizers -->
+        <div style="margin-bottom:3rem;">
+          <h3 style="margin-bottom:1rem; color:#ff6600;">Appetizers</h3>
+
+          <div class="grid grid-2">
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Bruschetta</h4>
+                <p style="color:#666; font-size:0.9rem;">Toasted bread with tomato, garlic, and basil.</p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$8.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Garlic Bread</h4>
+                <p style="color:#666; font-size:0.9rem;">Fresh bread with garlic butter and herbs.</p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$6.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Main Courses -->
+        <div style="margin-bottom:3rem;">
+          <h3 style="margin-bottom:1rem; color:#ff6600;">Main Courses</h3>
+
+          <div class="grid grid-2">
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Spaghetti Carbonara</h4>
+                <p style="color:#666; font-size:0.9rem;">
+                  Classic pasta with eggs, bacon, parmesan, and pepper.
+                </p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$14.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Margherita Pizza</h4>
+                <p style="color:#666; font-size:0.9rem;">
+                  Mozzarella, fresh tomatoes, and basil.
+                </p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$12.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Chicken Alfredo</h4>
+                <p style="color:#666; font-size:0.9rem;">
+                  Grilled chicken served with creamy Alfredo sauce.
+                </p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$16.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Lasagna</h4>
+                <p style="color:#666; font-size:0.9rem;">
+                  Layers of pasta, meat sauce, and cheese.
+                </p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$15.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div style="margin-bottom:3rem;">
+          <h3 style="margin-bottom:1rem; color:#ff6600;">Desserts</h3>
+
+          <div class="grid grid-2">
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Tiramisu</h4>
+                <p style="color:#666; font-size:0.9rem;">Classic coffee-soaked Italian dessert.</p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$7.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="padding:1.5rem; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <h4 style="margin-bottom:0.5rem;">Cannoli</h4>
+                <p style="color:#666; font-size:0.9rem;">Crispy pastry filled with sweet ricotta.</p>
+              </div>
+
+              <div style="text-align:right;">
+                <div style="font-weight:600; color:#ff6600;">$6.99</div>
+
+                <div style="display:flex; gap:0.5rem; align-items:center; margin-top:0.5rem;">
+                  <button class="quantity-minus">−</button>
+                  <input type="number" class="quantity-input" value="1" min="1">
+                  <button class="quantity-plus">+</button>
+
+                  <button class="btn btn-primary" style="margin-left:0.5rem;">Add</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Restaurant Info + Reviews -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-bottom:3rem;">
+
+        <div class="card" style="padding:2rem;">
+          <h3 style="margin-bottom:1.5rem;">Restaurant Information</h3>
+
+          <div style="display:flex; flex-direction:column; gap:1rem;">
+            <div><strong>Address:</strong> 123 Main Street, Downtown, NY 10001</div>
+            <div><strong>Phone:</strong> (555) 123-4567</div>
+            <div><strong>Hours:</strong> 11:00 AM – 10:00 PM</div>
+            <div><strong>Delivery Hours:</strong> 11:00 AM – 10:00 PM</div>
+            <div><strong>Minimum Order:</strong> $15.00</div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:2rem;">
+          <h3 style="margin-bottom:1.5rem;">Customer Reviews</h3>
+
+          <div style="display:flex; flex-direction:column; gap:1.5rem;">
+
+            <div style="border-bottom:1px solid #ddd; padding-bottom:1rem;">
+              <div style="display:flex; justify-content:space-between;">
+                <strong>John D.</strong>
+                <span class="star">★★★★★</span>
+              </div>
+              <p style="color:#666; font-size:0.9rem;">
+                Amazing food! Fresh pasta and perfect seasoning. Ordering again!
+              </p>
+            </div>
+
+            <div style="border-bottom:1px solid #ddd; padding-bottom:1rem;">
+              <div style="display:flex; justify-content:space-between;">
+                <strong>Sarah M.</strong>
+                <span class="star">★★★★☆</span>
+              </div>
+              <p style="color:#666; font-size:0.9rem;">
+                Great pizza and super quick delivery. Try the garlic bread!
+              </p>
+            </div>
+
+            <div>
+              <div style="display:flex; justify-content:space-between;">
+                <strong>Mike R.</strong>
+                <span class="star">★★★★★</span>
+              </div>
+              <p style="color:#666; font-size:0.9rem;">
+                Best Italian restaurant I've ordered from. Authentic taste and big portions.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-section">
+          <h3>InstaGrab</h3>
+          <p>Your favorite food delivery app. Order now, eat happy.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>For Customers</h3>
+          <ul class="footer-links">
+            <li><a href="#">Browse Restaurants</a></li>
+            <li><a href="#">Track Orders</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Refer a Friend</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>For Restaurants</h3>
+          <ul class="footer-links">
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Business Resources</a></li>
+            <li><a href="#">Get Help</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 InstaGrab. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

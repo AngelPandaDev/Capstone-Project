@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurants - InstaGrab | Order Food Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">InstaGrab</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Search and Filter Section -->
+  <section class="search-filter-section">
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" placeholder="Search for restaurants, cuisines, or dishes..." class="search-input">
+        <button class="btn btn-accent">Search</button>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="rating">Top Rated</button>
+        <button class="filter-btn" data-filter="delivery">Fast Delivery</button>
+        <button class="filter-btn" data-filter="italian">Italian</button>
+        <button class="filter-btn" data-filter="asian">Asian</button>
+        <button class="filter-btn" data-filter="american">American</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurant Listing Section -->
+  <section class="restaurant-listing">
+    <div class="container">
+      <h2 class="section-title">All Restaurants</h2>
+
+      <div class="grid grid-3">
+        <!-- Example of a restaurant card -->
+        <article class="card restaurant-card">
+          <div class="card-image">Mama's Italian Kitchen</div>
+          <div class="card-body">
+            <h3 class="card-title">Mama's Italian Kitchen</h3>
+            <p class="card-subtitle">Italian • Pasta • Pizza</p>
+            <div class="card-rating">
+              <span class="star">★★★★★</span>
+              <span>(324 reviews)</span>
+            </div>
+            <p class="card-description">Authentic Italian cuisine with fresh ingredients. Delivery in 30-45 min.</p>
+            <div class="delivery-info">
+              <span class="delivery-text">Free delivery over $25</span>
+              <span class="delivery-time">30-45 min</span>
+            </div>
+            <a href="restaurant-detail.html?id=1" class="btn btn-primary btn-block">View Menu</a>
+          </div>
+        </article>
+
+        <!-- Add other restaurant cards here following the same structure -->
+        <!-- Restaurant 2 -->
+        <article class="card restaurant-card">
+          <div class="card-image">Tokyo Sushi House</div>
+          <div class="card-body">
+            <h3 class="card-title">Tokyo Sushi House</h3>
+            <p class="card-subtitle">Japanese • Sushi • Asian</p>
+            <div class="card-rating">
+              <span class="star">★★★★★</span>
+              <span>(287 reviews)</span>
+            </div>
+            <p class="card-description">Premium sushi made fresh daily. Free delivery on orders over $30.</p>
+            <div class="delivery-info">
+              <span class="delivery-text">Free delivery over $30</span>
+              <span class="delivery-time">25-40 min</span>
+            </div>
+            <a href="restaurant-detail.html?id=2" class="btn btn-primary btn-block">View Menu</a>
+          </div>
+        </article>
+
+        <!-- Repeat similarly for all other restaurants... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>InstaGrab</h3>
+          <p>Your favorite food delivery app. Order now, eat happy.</p>
+        </div>
+        <div class="footer-section">
+          <h3>For Customers</h3>
+          <ul class="footer-links">
+            <li><a href="#">Browse Restaurants</a></li>
+            <li><a href="#">Track Orders</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Refer a Friend</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>For Restaurants</h3>
+          <ul class="footer-links">
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Business Resources</a></li>
+            <li><a href="#">Get Help</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 InstaGrab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
