@@ -9,6 +9,7 @@ html {
   font-size: 16px;
 }
 
+/* Base styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   font-size: 1rem;
@@ -16,6 +17,57 @@ body {
   color: #333333;
   background-color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  color: #f0f0f0;
+  background-color: #1a1a1a;
+}
+
+body.dark-theme .card,
+body.dark-theme header,
+body.dark-theme .alt {
+  background-color: #2d2d2d;
+  border-color: #444444;
+}
+
+/* Features section specific styles */
+.alt {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.dark-theme .alt {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+}
+
+dark-theme .alt h2,
+.dark-theme .alt h3,
+.dark-theme .alt p {
+  color: #f0f0f0;
+}
+
+/* Ensure orange color for feature headings in both themes */
+.alt h3[style*="color:#ff6600"],
+.dark-theme .alt h3[style*="color:#ff6600"] {
+  color: #ff6600 !important;
+}
+
+body.dark-theme .nav-links a,
+body.dark-theme .card-title,
+body.dark-theme .card-subtitle,
+body.dark-theme .card-rating,
+body.dark-theme .card-body p,
+body.dark-theme .container p,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #f0f0f0;
 }
 
 h1 {
@@ -61,6 +113,14 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme header {
+  background-color: #2d2d2d;
+  border-bottom-color: #444444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -96,6 +156,36 @@ nav {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  border-radius: 4px;
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Ensure text is visible in dark mode */
+.dark-theme .btn-secondary {
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+
+.dark-theme .btn-secondary:hover {
+  background-color: #f0f0f0;
+  color: #2d2d2d;
 }
 
 /* Buttons */
@@ -173,6 +263,7 @@ label {
   background-color: #ffffff;
   overflow: hidden;
   transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
 }
 
 .card:hover {
@@ -181,22 +272,33 @@ label {
 
 .card-image {
   width: 100%;
-  height: 200px;
+  height: auto;
+  max-height: 200px;
   background-color: #f5f5f5;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   color: #888888;
   font-weight: 500;
   border-radius: 0.5rem 0.5rem 0 0;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
 }
 
 .card-body {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  flex-grow: 1;
 }
 
 .card-body p {

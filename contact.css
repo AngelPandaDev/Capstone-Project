@@ -100,6 +100,50 @@
   margin-bottom: 1rem;
 }
 
+/* Dark Theme Styles */
+.dark-theme .contact-form,
+.dark-theme .map-section,
+.dark-theme .business-hours {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+.dark-theme .contact-form label,
+.dark-theme .map-section p,
+.dark-theme .business-hours p {
+  color: #e0e0e0;
+}
+
+.dark-theme .contact-form input,
+.dark-theme .contact-form textarea,
+.dark-theme .contact-form select {
+  background-color: #3d3d3d;
+  border-color: #555;
+  color: #f0f0f0;
+}
+
+.dark-theme .contact-form input::placeholder,
+.dark-theme .contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.dark-theme .business-hours {
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+}
+
+.dark-theme .contact-form .btn {
+  background-color: #ff8c42;
+  color: #fff;
+  border-color: #ff8c42;
+}
+
+.dark-theme .contact-form .btn:hover {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-grid {

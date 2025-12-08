@@ -21,6 +21,7 @@
           <li><a href="faq.html">FAQ</a></li>
         </ul>
         <div class="nav-buttons">
+          <button id="theme-toggle" class="theme-toggle">🌓</button>
           <a href="login.html" class="btn btn-secondary">Login</a>
         </div>
       </nav>
@@ -92,6 +93,23 @@
       </div>
     </div>
   </footer>
-
+  <script src="theme.js"></script>
+  <script>
+    const signupForm = document.querySelector('.signup-form');
+    const emailInput = document.getElementById('email');
+    
+    signupForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const email = emailInput.value.trim();
+      const requiredDomain = '@nst.rishihood.edu.in';
+      
+      if (!email.endsWith(requiredDomain)) {
+        alert('Please use your @nst.rishihood.edu.in email address to sign up.');
+      }
+      else {
+        window.location.href = 'restaurants.html';
+      }
+    });
+  </script>
 </body>
 </html>

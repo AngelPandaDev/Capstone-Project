@@ -21,6 +21,7 @@
           <li><a href="faq.html">FAQ</a></li>
         </ul>
         <div class="nav-buttons">
+          <button id="theme-toggle" class="theme-toggle">🌓</button>
           <a href="login.html" class="btn btn-secondary">Login</a>
           <a href="signup.html" class="btn btn-primary">Sign Up</a>
         </div>
@@ -53,9 +54,8 @@
       <h2 class="section-title">All Restaurants</h2>
 
       <div class="grid grid-3">
-        <!-- Example of a restaurant card -->
         <article class="card restaurant-card">
-          <div class="card-image">Mama's Italian Kitchen</div>
+          <div class="card-image"><img src="mama.png" alt="Mama's Italian Kitchen"></div>
           <div class="card-body">
             <h3 class="card-title">Mama's Italian Kitchen</h3>
             <p class="card-subtitle">Italian • Pasta • Pizza</p>
@@ -65,17 +65,15 @@
             </div>
             <p class="card-description">Authentic Italian cuisine with fresh ingredients. Delivery in 30-45 min.</p>
             <div class="delivery-info">
-              <span class="delivery-text">Free delivery over $25</span>
+              <span class="delivery-text">Free delivery over $25</span> • 
               <span class="delivery-time">30-45 min</span>
             </div>
             <a href="restaurant-detail.html?id=1" class="btn btn-primary btn-block">View Menu</a>
           </div>
         </article>
 
-        <!-- Add other restaurant cards here following the same structure -->
-        <!-- Restaurant 2 -->
         <article class="card restaurant-card">
-          <div class="card-image">Tokyo Sushi House</div>
+          <div class="card-image"><img src="tokyo.png" alt="Tokyo Sushi House"></div>
           <div class="card-body">
             <h3 class="card-title">Tokyo Sushi House</h3>
             <p class="card-subtitle">Japanese • Sushi • Asian</p>
@@ -85,14 +83,84 @@
             </div>
             <p class="card-description">Premium sushi made fresh daily. Free delivery on orders over $30.</p>
             <div class="delivery-info">
-              <span class="delivery-text">Free delivery over $30</span>
+              <span class="delivery-text">Free delivery over $30</span> • 
               <span class="delivery-time">25-40 min</span>
             </div>
             <a href="restaurant-detail.html?id=2" class="btn btn-primary btn-block">View Menu</a>
           </div>
         </article>
 
-        <!-- Repeat similarly for all other restaurants... -->
+        <article class="card restaurant-card">
+          <div class="card-image"><img src="burger.png" alt="The Burger Spot"></div>
+          <div class="card-body">
+            <h3 class="card-title">The Burger Spot</h3>
+            <p class="card-subtitle">American • Burgers • Fast Food</p>
+            <div class="card-rating">
+              <span class="star">★★★★☆</span>
+              <span>(156 reviews)</span>
+            </div>
+            <p class="card-description">Handmade burgers with premium toppings. Available 11am–11pm.</p>
+            <div class="delivery-info">
+              <span class="delivery-text">Free delivery over $20</span> • 
+              <span class="delivery-time">20-35 min</span>
+            </div>
+            <a href="restaurant-detail.html?id=3" class="btn btn-primary btn-block">View Menu</a>
+          </div>
+        </article>
+
+        <article class="card restaurant-card">
+          <div class="card-image"><img src="spice.png" alt="Spice Garden"></div>
+          <div class="card-body">
+            <h3 class="card-title">Spice Garden</h3>
+            <p class="card-subtitle">Indian • Curry • Vegetarian</p>
+            <div class="card-rating">
+              <span class="star">★★★★★</span>
+              <span>(412 reviews)</span>
+            </div>
+            <p class="card-description">Authentic Indian flavors. Dishes prepared fresh to order.</p>
+            <div class="delivery-info">
+              <span class="delivery-text">Free delivery over $25</span> • 
+              <span class="delivery-time">30-45 min</span>
+            </div>
+            <a href="restaurant-detail.html?id=4" class="btn btn-primary btn-block">View Menu</a>
+          </div>
+        </article>
+
+        <article class="card restaurant-card">
+          <div class="card-image"><img src="bangkok.png" alt="Bangkok Street"></div>
+          <div class="card-body">
+            <h3 class="card-title">Bangkok Street</h3>
+            <p class="card-subtitle">Thai • Asian • Noodles</p>
+            <div class="card-rating">
+              <span class="star">★★★★★</span>
+              <span>(298 reviews)</span>
+            </div>
+            <p class="card-description">Authentic Thai street food. Delivery in 25–40 minutes.</p>
+            <div class="delivery-info">
+              <span class="delivery-text">Free delivery over $25</span> • 
+              <span class="delivery-time">25-40 min</span>
+            </div>
+            <a href="restaurant-detail.html?id=5" class="btn btn-primary btn-block">View Menu</a>
+          </div>
+        </article>
+
+        <article class="card restaurant-card">
+          <div class="card-image"><img src="casa.png" alt="Casa Mexico"></div>
+          <div class="card-body">
+            <h3 class="card-title">Casa Mexico</h3>
+            <p class="card-subtitle">Mexican • Tacos • Burritos</p>
+            <div class="card-rating">
+              <span class="star">★★★★☆</span>
+              <span>(189 reviews)</span>
+            </div>
+            <p class="card-description">Fresh Mexican food with house-made salsa. Happy hour 3–6pm.</p>
+            <div class="delivery-info">
+              <span class="delivery-text">Free delivery over $20</span> • 
+              <span class="delivery-time">20-35 min</span>
+            </div>
+            <a href="restaurant-detail.html?id=6" class="btn btn-primary btn-block">View Menu</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -138,5 +206,6 @@
     </div>
   </footer>
 
+  <script src="theme.js"></script>
 </body>
 </html>

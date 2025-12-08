@@ -38,6 +38,41 @@
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Dark theme styles */
+.dark-theme .login-card {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-theme .login-form label,
+.dark-theme .login-form input::placeholder,
+.dark-theme .checkbox-label,
+.dark-theme .signup-prompt,
+.dark-theme .terms-agreement {
+  color: #e0e0e0;
+}
+
+.dark-theme .login-form input {
+  background-color: #3d3d3d;
+  border-color: #555;
+  color: #f0f0f0;
+}
+
+.dark-theme .login-form input:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 0 3px rgba(255,102,0,0.2);
+}
+
+.dark-theme .forgot-password {
+  color: #ff8c42;
+}
+
+.dark-theme .terms-agreement a {
+  color: #ff8c42;
 }
 
 .login-form input:focus {
@@ -68,7 +103,7 @@
 
 .forgot-password {
   color: #ff6600;
-  padding: 0.25rem 0.5rem;
+  padding: 0rem 1rem;
   height: 2rem;
 }
 
@@ -151,16 +186,8 @@
     padding: 0 0.5rem;
   }
 
-  .grid-3 {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
   section {
     padding: 2rem 0;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
   }
 
   .login-section {
